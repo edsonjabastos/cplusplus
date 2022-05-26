@@ -24,9 +24,12 @@ int main()
     strcpy(atletas[5].telefone, "@@@@@-@@@@");
     atletas[5].anoNasc = 1900;
     atletas[5].ajudaDeCusto = 2;
+    // atletas[6] = (Atleta){"Gaspar", "Sumo", "22 NATO", "90000-2589", 3000, 1996};
     system("cls");
 
-    for (int x = 0; x <= 5; x++)
+    Atleta atletaDiferente[1] = {{"Gaspar", "Sumo", "22 NATO", "90000-2589", 3000, 1996}};
+
+    for (int x = 0; x <= 6; x++)
     {
         cout << "\n<$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>\n";
         cout << "\t> Nome do Atleta: " << atletas[x].nomeAtl;
@@ -36,6 +39,13 @@ int main()
         cout << "\n> Telefone: " << atletas[x].telefone;
         cout << "\n<$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>\n\n";
     }
+    cout << "\n<$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>\n";
+    cout << "\t> Nome do Atleta: " << atletaDiferente[0].nomeAtl;
+    cout << "\n---------------------------------------------------------\n";
+    cout << "> Esporte: " << atletaDiferente[0].esporte << "\t > Categoria: " << atletaDiferente[0].categoria;
+    cout << "\n> Ano de nascimento: " << atletaDiferente[0].anoNasc << "\t > Ajuda de custo: R$" << atletaDiferente[0].ajudaDeCusto;
+    cout << "\n> Telefone: " << atletaDiferente[0].telefone;
+    cout << "\n<$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>\n\n";
 
     system("pause");
     return 0;
