@@ -20,7 +20,7 @@ int main()
         cin >> num;
         while (num < 0 || num > 10000)
         {
-            cout << "\nPreço inválido, digite novamente: ";
+            cout << "\nPreco invalido, digite novamente: ";
             cin >> num;
         }
         produtos[x].codigo = num;
