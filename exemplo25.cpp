@@ -19,14 +19,14 @@ int main()
     // atletas[4] = {"Samuelzinho", "PingPong", "Beck", "98765-2589", 400, 1994};
     atletas[5];
     strcpy(atletas[5].nomeAtl, "Ze Bunitinho");
-    strcpy(atletas[5].nomeAtl, "Corredor");
-    strcpy(atletas[5].nomeAtl, "Da Hora");
-    strcpy(atletas[5].nomeAtl, "@@@@@-@@@@");
+    strcpy(atletas[5].esporte, "Corredor");
+    strcpy(atletas[5].categoria, "Da Hora");
+    strcpy(atletas[5].telefone, "@@@@@-@@@@");
     atletas[5].anoNasc = 1900;
     atletas[5].ajudaDeCusto = 2;
     system("cls");
 
-    for (int x = 0; x < 5; x++)
+    for (int x = 0; x <= 5; x++)
     {
         cout << "\n<$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>\n";
         cout << "\t> Nome do Atleta: " << atletas[x].nomeAtl;
