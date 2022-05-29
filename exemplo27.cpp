@@ -17,22 +17,32 @@ int main()
         cin >> palavrita[x].palavra;
     }
 
-    for (int y = 0; y < TAM; y++)
+    for (int x = 0; x < TAM; x++)
     {
         cout << "\n"
-             << palavrita[y].palavra << "\n";
+             << palavrita[x].palavra << "\n";
     }
 
-    for (int z = 0; z < TAM; z++)
+    for (int x = 0; x < TAM; x++)
     {
         cout << "============";
-        for (int a = 0; palavrita[z].palavra[a] != '\0'; a++)
+        for (int a = 0; palavrita[x].palavra[a] != '\0'; a++)
         {
             cout << "\n"
-                 << palavrita[z].palavra[a];
+                 << palavrita[x].palavra[a];
             cout << "\n";
         }
+    }
+
+    for (int x = 0; x < TAM; x++)
+    {
         cout << "============";
+        for (int y = 0; y < strlen(palavrita[x].palavra); y++)
+        {
+            cout << "\n"
+                 << palavrita[x].palavra[y];
+            cout << "\n\n";
+        }
     }
 
     cout << "\n\n";
