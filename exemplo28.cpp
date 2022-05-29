@@ -16,7 +16,9 @@ int main()
         float valor;
         data venc;
     } boleto[TAM];
+
     int x;
+
     for (x = 0; x < TAM; x++)
     {
         cout << "\nDigite o codigo do boleto: ";
