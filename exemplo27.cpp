@@ -17,6 +17,7 @@ int main()
         cin >> palavrita[x].palavra;
     }
 
+    cout << "============";
     for (int x = 0; x < TAM; x++)
     {
         cout << "\n"
@@ -39,11 +40,13 @@ int main()
         cout << "============";
         for (int y = 0; y < strlen(palavrita[x].palavra); y++)
         {
+            palavrita[x].palavra[0] = toupper(palavrita[x].palavra[0]);
             cout << "\n"
                  << palavrita[x].palavra[y];
             cout << "\n\n";
         }
     }
+    cout << "============";
 
     cout << "\n\n";
     system("pause");
